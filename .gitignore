@@ -9,4 +9,4 @@ venv/
 !.env.example
 .pytest_cache/
 node_modules/
-
+.vercel/
