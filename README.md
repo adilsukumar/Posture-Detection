@@ -6,9 +6,13 @@ Posture Monitor is a static web application that uses MediaPipe Pose to estimate
 
 **This is a heuristic posture aid, not a medical device or diagnostic tool.**
 
+<a id="features"></a>
+
 ## <img src="assets/readme/icon-pose.svg" width="30" height="30" alt=""/> Features
 
 <p><picture><source media="(max-width: 600px)" srcset="assets/readme/capabilities-mobile.svg"/><img src="assets/readme/capabilities.svg" width="100%" alt="Live feedback, calibration, detection validation, session counters, a static interface and browser-side processing."/></picture></p>
+
+<a id="how-it-works"></a>
 
 ## <img src="assets/readme/icon-geometry.svg" width="30" height="30" alt=""/> How it works
 
@@ -35,6 +39,8 @@ The classifier compares those measurements with a baseline. Before calibration i
 | Session timer | Starts after camera playback begins; counters are not persisted between reloads |
 
 The geometry uses normalized landmark coordinates. Calibration is a snapshot of the current accepted frame, not a multi-frame training step. The illustrated landmarks below and above are conceptual artwork, not a recording or measured result.
+
+<a id="run-locally"></a>
 
 ## <img src="assets/readme/icon-terminal.svg" width="30" height="30" alt=""/> Run locally
 
@@ -74,6 +80,8 @@ python tools\generate_docs.py
 
 The application is static and can be deployed to Vercel or another HTTPS static host. Keep `index.html`, `style.css`, and `script.js` together at the site root.
 
+<a id="privacy-and-limitations"></a>
+
 ## <img src="assets/readme/icon-gate.svg" width="30" height="30" alt=""/> Privacy and limitations
 
 <p><picture><source media="(max-width: 600px)" srcset="assets/readme/privacy-mobile.svg"/><img src="assets/readme/privacy.svg" width="100%" alt="Camera frames are not uploaded or stored by this project. CDN assets require an internet connection on first load. The reference CSV is not training data for the live classifier."/></picture></p>
@@ -83,6 +91,8 @@ The application is static and can be deployed to Vercel or another HTTPS static 
 - Counts are session-only and reset when the page reloads.
 - Accuracy depends on lighting, camera placement, visibility, and calibration.
 - The tool should not be used to diagnose or treat a health condition.
+
+<a id="explore-the-project"></a>
 
 ## <img src="assets/readme/icon-docs.svg" width="30" height="30" alt=""/> Explore the project
 
